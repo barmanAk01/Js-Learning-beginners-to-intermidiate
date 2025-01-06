@@ -20,14 +20,16 @@ console.log(2+5); console.log("AK");
 
 //symbols -> unique 
 // use of symbol
-const id = Symbol ('620')
-const newId = Symbol ('620')
+const id = Symbol('620')
+const newId = Symbol('620')
 
 // console.log(id);
 // console.log(newId);
 // console.log(id === newId);
 // console.log(id == newId);
 
+ console.log(typeof newId);
+ 
 //how to use bigInt
 const bigNumber = 9746189410471089n // just adding 'n' at the end of the number
 
@@ -50,5 +52,5 @@ const myFunction = function(){
 }
 
 console.log( "justname is :" ,typeof justname);
-console.log(typeof myFunction);
 console.log(typeof myObj);
+console.log(typeof myFunction);
