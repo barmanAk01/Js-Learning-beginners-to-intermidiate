@@ -64,7 +64,7 @@ const bigNumber = 9746189410471089n // just adding 'n' at the end of the number
 //   1) stack() is used to primitive  
 //   2) heap() is used to non_primitive
 
-//example of stack memory-------------------- 
+//Example of stack memory-------------------- 
 let myName = "kalua"
 
 let anotherName = myName
@@ -72,10 +72,10 @@ anotherName = "kal"
 
 console.log(anotherName);
 console.log(myName);
-//example of stack memory------------------ 
+//Example of stack memory------------------ 
 
 
-//example of Heap memory--------------------
+//Example of Heap memory--------------------
 let user1 ={
     name: "RAHUL",
     emial: "Rah@mail.com"
@@ -83,10 +83,10 @@ let user1 ={
 
 // Now I will just change the value of email in user2 , bt this will also change the value in user1 due to same point of reference.
 let user2 = user1; 
+user2.emial ="Rahul072mail.com"
 
- user2.emial ="Rahul072mail.com"
  console.log("value of user1 : ",user1);
  console.log("value of user2 : ",user2);
-//example of Heap memory--------------------
+//Example of Heap memory--------------------
  
  
