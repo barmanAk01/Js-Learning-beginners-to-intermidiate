@@ -57,8 +57,8 @@ const max = 20;
 
 console.log( Math.floor( Math.random() * (max-min +1) ) + min);
 // By this we achieve :
-//  - avoid zero
-//  - to rid of decimal value
-//  - get value btw 10 to 20
+//  - avoid zero => by using floor()
+//  - to get rid of decimal value => by using +1
+//  - get value btw 10 to 20 
 
 
