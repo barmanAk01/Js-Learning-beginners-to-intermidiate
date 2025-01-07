@@ -31,6 +31,10 @@ console.log( typeof name);
 //  console.log(price.toLocaleString());  // convert to US standard
 //  console.log(price.toLocaleString('EN-IN')); // convert to indian standard
 
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Maths functions:
+
 // always give in output between 0-1
  console.log(Math.random()); 
 
