@@ -1,5 +1,5 @@
 
-// object Literals
+// Object Literals --
 
 const mySymbol = Symbol("key")
 
@@ -24,7 +24,7 @@ const techAk = {
 
 // console.log(techAk["other name"]);
 
-// By this syntax we can get the value of symbol bt as a string , nt in symbol
+// By this syntax we can get the value of symbol bt as a string type, nt in symbol type
 // console.log(techAk.mySymbol);
 // console.log( typeof (techAk.mySymbol) ); //string
 
@@ -35,15 +35,35 @@ const techAk = {
  
 // want to change the value of any like email
 
-console.log(techAk.email);
+// console.log(techAk.email);
 
-techAk.email = "rock@gool.com" // this overWrites the value
-console.log(techAk.email);
+// techAk.email = "rock@gool.com" // this overWrites the value
+// console.log(techAk.email);
 
-// If I want to frezee my value , that can not change by other
-Object.freeze(techAk)
+// If I want to frezee my value , that can not be change by others
+// Object.freeze(techAk)
 
 techAk.email = "rock@zoho.com"
 
+// console.log(techAk);
 
-console.log(techAk);
+
+// Adding function to this
+techAk.greeting = function(){
+    console.log(" Welcome to Finction()");   
+}
+
+techAk.greeting2 = function(){
+    console.log(` Welcome to Function, ${this.name} `);   
+}
+
+// console.log(techAk.greeting());
+// console.log(techAk.greeting2());
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+
+
+
