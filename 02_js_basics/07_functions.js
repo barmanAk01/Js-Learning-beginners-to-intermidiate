@@ -54,12 +54,14 @@ function handleObjects(obj){
  })
 
  // Now , Let see how Array can be passed in functions ()
- const myArr = [20, 40 , 50 ]
+ const myArr = [20, 40 , 50]
 
  function handleArray(arrValue){
-      return arrValue;
+      return arrValue; [0]
     
  }
 
- console.log(handleArray(myArr));
+//  console.log(handleArray(myArr));
+ console.log(handleArray([2, 5]) );
+
  
