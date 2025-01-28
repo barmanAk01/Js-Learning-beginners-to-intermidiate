@@ -64,4 +64,3 @@ function handleObjects(obj){
 //  console.log(handleArray(myArr));
  console.log(handleArray([2, 5]) );
 
- 
