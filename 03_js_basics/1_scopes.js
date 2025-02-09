@@ -33,7 +33,7 @@ if (true){
 // console.log( val_3);
 
 
-// => Now see how variable can be use in nested functions() 
+// => Now see how variable can be used in nested functions() 
 function one(){
    const name = "Rock"
 
@@ -64,7 +64,7 @@ if(true){
 // console.log(learningOn); out of if condition 1, so this will not print 
 
 
-// => some re variations of declaring functions()
+// => some more variations of declaring functions()
 //.1
 function fnOne(num){
     return num + 1;
