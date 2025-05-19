@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #body{
+            background-color: rgb(25, 26, 26); 
+            color: whitesmoke;
+        }
+    </style>
+</head>
+
+<body id="body">
+    <div class="parent">
+        <!-- jhudihw -->
+      This is First line
+      <div class="day">Mon</div>
+      <div class="day">Tues</div>
+      <div class="day">Wed</div>
+      <div class="day">Thur</div>
+      <div class="day">Fri</div>
+    </div>
+</body>
+
+<script>
+       const parent = document.querySelector('.parent');
+       const children = parent.children
+       const nodes = parent.childNodes
+
+    //    console.log(parent);
+    //    console.log(parent.children);
+    //    console.log(parent.childNodes);
+    //    console.log(children[1].innerText);
+    //    console.log(parent.innerText);
+    //    console.log(children[1].innerHTML);
+    //    console.log(parent.innerHTML);
+
+
+    // for(let i = 0; i< children.length; i++){
+    //    console.log( children[i].innerText);
+    // //    console.log( children[i].innerHTML);
+    // //    parent.children[1].style.color = 'green' 
+    //    children[i].style.color = 'green'     
+    // }
+
+    // More properties to get first element or last .
+    // console.log(parent.firstElementChild);
+    // console.log(parent.lastElementChild);
+    
+    const day = document.querySelector('.day')
+    // console.log(day);
+    // get the parent element from children Element 
+    // console.log(day.parentElement);
+    // console.log(day.nextElementSibling);
+    // console.log(day.nextSibling);
+
+    console.log("Node : " , parent.childNodes);
+
+</script>
+
+</html>

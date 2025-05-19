@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Learnings 3</title>
+
+        <style>
+        #body{
+            background-color: rgb(35, 36, 36); 
+            color: rgb(68, 235, 46);
+        }
+    </style>
+</head>
+
+<body id="body"> 
+    
+</body>
+
+<!-- Play arround scripting  -->
+<script>
+ const div = document.createElement('div')
+ console.log(div);
+ 
+ div.className = "main-div"
+ div.id  = "div1"
+ div.setAttribute("title", "title1")
+ div.style.padding = "10px"
+
+
+//  Note properties:
+//  appendChid -> use to attach to other element and to documnet
+
+// To add text in div I can use innerText bt not suggested
+ div.innerText = "Kalua Js Learnings"
+ document.body.appendChild(div)
+
+// we can also use textContent 
+const p = document.createElement('p');//created 1st P tag in div
+p.textContent = " This is 1st para"
+p.style.color = "yellow"
+div.appendChild(p) // p attached to div
+document.body.appendChild(div); // div attached to body of document
+
+ 
+// insted use ->'createTextNode' while structuring the dom
+// createTextNode - use to create text Node 
+
+// Add 1 more P tag in div 
+const txtNode = document.createTextNode("This is 2nd para")
+const p2 = document.createElement('p');//created 2nd P tag
+p2.style.color = "white"
+p2.appendChild(txtNode) // attached text node to p2  
+div.appendChild(p2) //  attached  p2 to div
+// document.body.appendChild(div);
+
+
+/* Choose based on your specific needs: 
+#_textContent for most direct text manipulation, 
+#_innerText when you need to respect visual formatting, and 
+#_createTextNode when building DOM structures programmatically.
+*/
+</script>
+
+</html>
