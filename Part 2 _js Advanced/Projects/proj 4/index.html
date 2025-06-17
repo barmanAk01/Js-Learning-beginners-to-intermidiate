@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../styles.css">
+
+    <title>Project 4</title>
+</head>
+<body id="body">
+    
+  <nav>
+     <a href="../" aria-current="page">Home</a>
+     <a href="https://github.com/barmanAk01" id="github"> Github</a>  
+  </nav>
+
+  <br><br>
+  <a
+    style="
+      background-color: #807c7c;
+      color: #000000;
+      padding: 10px 300px;
+      margin-left: 22%;
+      border-radius: 8px;
+      border: 2px solid #c4c1c1;
+    "
+  > <b>Ak project 03_Solution </b>  </a>
+______________________________________________________________________________________________________________________________________________________________________________
+
+  <div id="container">
+
+    <div id="all-txt">
+      <center>  <h1 id="heading">Number guessing game</h1> </center>
+      
+      <!-- <br> -->
+      <p class="upperPara">Try and guess a random number between 1 and 100.</p>
+      <p class="upperPara">You have only 5 attempts to guess the right number.</p>
+    </div>
+ 
+    <form class="form">
+      <label2 for="guessField" id="guessHeading">Guess a No. </label2>
+      <input type="text" id ="inputField"  placeholder="Enter No">
+      <input type="submit" id="submt" value="submit ">
+    </form>
+
+    <div id="result">
+     <p class="downPara">Previous Guesses : <span class="prevGuesses"></span> </p>
+     <p class="downPara">Guesses Remaining : <span class="remaining">5</span></p>
+     <p class="lowOrHi"></p>
+    </div>
+
+  </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>
