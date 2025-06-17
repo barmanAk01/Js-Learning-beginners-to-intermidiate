@@ -60,30 +60,50 @@ form.addEventListener('click', function(e) {
         document.querySelector('#height').value = '';
         document.querySelector('#weight').value = '';
         document.querySelector('#results').innerHTML = '';
+        document.querySelector('#messages').innerHTML = '';
+
+    document.querySelector('#height').focus();
+
     }
+
 });
 
 // Keep submit separate
 form.addEventListener('submit', function(e) {
     // Your BMI calculation logic
 
-   e.preventDefault();
+   e.preventDefault(); // Stops from submission
 
    const height = parseInt(document.querySelector('#height').value);
    const weight = parseInt(document.querySelector('#weight').value);
    const result = document.querySelector('#results');
+   const message = document.querySelector('#messages');
 
 
    if (height === '' || height < 0 || isNaN(height) ){
      result.innerHTML = ` Please Enter valid height `;
+     message.innerHTML = ''; // Clear message for invalid input
      
    }else if ( weight === '' || weight < 0 || isNaN(weight) ){
      result.innerHTML = `Please Enter valid weight `;
+     message.innerHTML = ''; // Clear message for invalid input
    }
    else{
      // Formula =  Weight / height square
-   const bmi = ( weight / ( (height*height)/10000) ).toFixed(1);
-   result.innerHTML = `<span>${bmi}</span>`
-   }
+     const bmi = ( weight / ( (height*height)/10000) ).toFixed(1);
+     result.innerHTML = `<span>${bmi}</span>`
+
+    // BMI Classification Logic - Compare BMI value, not result element
+    if (bmi < 18.5) {
+        message.innerHTML = `You are UnderWeight`;
+    } else if (bmi >= 18.5 && bmi <= 24.9) { // Use AND, not OR
+        message.innerHTML = `You are Normal Weight`;
+    } else if (bmi >= 25.0 && bmi <= 29.9) { 
+        message.innerHTML = `You are OverWeight`;
+    } else {
+        message.innerHTML = `You are Obese`;
+    }
+
+  }
 
 });

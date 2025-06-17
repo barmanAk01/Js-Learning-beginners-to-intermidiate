@@ -10,10 +10,10 @@
 
 #container-2{
     background-color: rgb(113, 114, 116);
-    height: 550px;
+    height: 540px;
     width: 350px;
-    border-radius: 4px;
-    margin-top: 5px;
+    border-radius: 6px;
+    margin-top: 20px;
     margin-left: 60px;
     padding: 20px;
     padding-top: 2px;
@@ -68,6 +68,14 @@ button{
     border: 20px;
 }
 
+#messages{
+    font-size: 20px;
+    padding-top:15px ;
+    margin-left: 40px;
+    color: rgb(77, 241, 7);
+    border: 20px;
+}
+
 #guide{
     margin-top: 60px;
     width: 300px;
@@ -78,8 +86,8 @@ button{
 ul {
   display: flex;
   flex-direction: column;
-  gap: 8px ;
+  gap: 8px ; /* Adjust the value as needed */
 }
 
-/* Adjust the value as needed */
+
 

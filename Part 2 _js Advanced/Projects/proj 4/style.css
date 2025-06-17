@@ -1,0 +1,129 @@
+
+
+html {
+  font-family: sans-serif;
+}
+
+#body{
+    background-color: rgb(43, 31, 20);
+    height: 400px;
+}
+
+#container{
+    height: 800px;
+    /* background-color: rgb(228, 243, 18); */
+    /* width: 200px; */
+}
+
+
+.upperPara{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    /* background-color: #ffffff; */
+    /* gap: 1px; */
+    align-items: center;
+    color: rgba(238, 211, 54, 0.841);
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+#guessHeading{
+    font-size: 42px;
+    color: azure;
+    padding: 15px;
+}
+
+#inputField{
+    width: 120px;
+    height: 30px;
+    border-radius: 8px;
+    border: 5px solid rgb(93, 97, 2);
+    font-size: 28px;
+    /* padding-left: 80px; */
+    align-items: center;
+
+}
+
+#submt{
+    margin-top: 20px;
+    background-color: black;
+    color: whitesmoke;
+    border-radius: 5px;
+    padding: 7px;
+    width: 138px;
+    font-size: 20px;
+    border: 1px solid grey;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(237, 134, 30, 0.431);
+    transition: all 0.1s ease;
+}
+
+#submt:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(205, 219, 233, 0.4);
+}
+
+#submt:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px  rgba(237, 134, 30, 0.431);
+}
+
+#result{
+ margin-top: 16px;
+ /* background-color: #161616; */
+}
+
+/* .prevGuesses{
+    margin-left: 13px;
+    margin-top: 160px; 
+} */
+
+/* .remaining{
+    margin-top: 20px
+} */
+
+p {
+  font-size: 16px;
+  text-align: center;
+  color: aliceblue;
+
+}
+
+.downPara{
+    color: #bebebe;
+}
+
+#newGame {
+  width: 150px;
+  height: 30px;
+  padding: 6px;
+  align-items: center;
+  background-color: #edd8d8;
+  color: #161616;
+  font-size: 23px;
+  border-radius: 8px;
+  margin-left: 44%;
+  border: 3px solid black;
+  /* margin-top: 50px; */
+
+  cursor:grabbing;
+  box-shadow: 0 6px 10px rgba(88, 88, 88, 0.938);
+  transition: all 0.2s ease;
+  
+}
+
+#newGame:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(235, 254, 244, 0.938);
+}
+
+#newGame:active {
+  transform: translateY(0);
+  box-shadow: 0 6px 12px rgb(0, 0, 0);
+  /* box-shadow: 0 4px 8px rgba(143, 173, 201, 0.938); */
+}
